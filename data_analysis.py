@@ -172,10 +172,11 @@ plt.show()
 
 order_status_distribution = file_read["OrderStatus"].value_counts()
 print(f"order status distribution is {order_status_distribution}")
-order_status_distribution.plot(kind='heatmap', cmap='viridis', figsize=(8, 6))
+order_status_distribution.plot(kind='bar', cmap='viridis', figsize=(8, 6))
 plt.title('Order Status Distribution')
 plt.xlabel('Order Status')
 plt.ylabel('Count')
+plt.tight_layout()
 plt.show()
 
 print("DATA ANALYSIS COMPLETE")
